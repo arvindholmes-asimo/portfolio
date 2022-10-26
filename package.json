@@ -1,0 +1,21 @@
+{
+  "name": "responsive_portfolio",
+  "version": "1.0.0",
+  "description": "responsive portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/ -o  dist/css/  -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "arvindholmes-asimo"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "arvind",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
