@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../dist/img/background.jpg);
+$home-image: url(../img/background.jpg);
 $background_opacity: 0.9;
 
 @mixin background {
@@ -17,7 +17,7 @@ $background_opacity: 0.9;
                 right: 0;
                 width: 100%;
                 height: 100%;
-                background: rgb () $primary-color;
+                background: $primary-color;
             }
         }
 
