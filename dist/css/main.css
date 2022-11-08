@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     Transform: rotate(180deg); }
@@ -39,18 +39,18 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu .menu-nav {
-    background: rgba(242, 242, 242, 0.9); }
+    background: rgba(55, 55, 55, 0.9); }
   .menu .menu-branding {
-    background: rgba(255, 255, 255, 0.9); }
+    background: rgba(68, 68, 68, 0.9); }
   .menu-branding {
-    background: #fff;
+    background: #444;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -75,7 +75,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -143,8 +143,8 @@ html {
   font-size: 10px; }
 
 body {
-  background: #fff;
-  color: #000;
+  background: #444;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -161,7 +161,7 @@ body {
       width: 100%;
       z-index: -1;
       height: 100%;
-      background: rgba(255, 255, 255, 0.9); }
+      background: rgba(68, 68, 68, 0.9); }
 
 h1,
 h2,
@@ -177,10 +177,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none; }
 
 header {
@@ -205,3 +205,26 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%; }
+
+.bio {
+  grid-area: bio; }
+
+.job-1 {
+  grid-area: job1; }
+
+.job-2 {
+  grid-area: job2; }
+
+.job-3 {
+  grid-area: job3; }
